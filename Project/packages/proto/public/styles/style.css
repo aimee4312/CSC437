@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 h1 {
     position: absolute;
     top: 0;
@@ -14,8 +16,33 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: #E5D283;
+}
+
 
 body {
     background-color: #4F709C;
-    padding: 6% 1%;
+    padding: 9% 2%;
+    color: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited{
+    color: #FBF3B5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F0F0F0;
+}
+
+.album-left-side {
+    width: 40%;
+    float: left;
+}
+
+.album-right-side {
+    width: 60%;
+    float: right
 }
