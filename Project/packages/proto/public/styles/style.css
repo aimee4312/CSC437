@@ -3,9 +3,9 @@
 :root {
     --color-light-background: #EDF0F5;
     --color-light-accent: #8D98AD;
-    --color-text-color: #959397;
+    --color-text-color: #CDCCD1;
     --color-dark-background: #363643;
-    --color-dark-accent: #6277D9;
+    --color-dark-accent: #CACCF2;
     --color-dark-header: #212125;
 }
 
