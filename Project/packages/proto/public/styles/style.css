@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --color-light-shade: #EDF0F5;
+    --color-light-background: #EDF0F5;
     --color-light-accent: #8D98AD;
-    --color-main-color: #959397;
-    --color-dark-shade: #363643;
+    --color-text-color: #959397;
+    --color-dark-background: #363643;
     --color-dark-accent: #6277D9;
     --color-dark-header: #212125;
 }
@@ -20,7 +20,7 @@ h1 {
     width: 100%;
     height: 5%;
     background-color: var(--color-dark-header);
-    color: var(--color-main-color);
+    color: var(--color-text-color);
     padding: 2%;
     margin: 0;
     display: flex;
@@ -35,22 +35,31 @@ h2 {
 
 
 body {
-    background-color: var(--color-dark-shade);
+    background-color: var(--color-dark-background);
     padding: 9% 2%;
     color: var(--color-dark-accent);
 }
 
 img {
     border-radius: 20px;
+    border: 2px solid var(--color-light-accent);
 }
 
 a:link, a:visited{
-    color: var(--color-dark-accent-accent);
+    color: var(--color-dark-accent);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--color-dark-accent-accent);
+    color: var(--color-light-accent);
+}
+
+svg.icon {
+    display: inline;
+    height: 2em;
+    width: 2em;
+    vertical-align: top;
+    fill: currentColor;
 }
 
 .album-left-side {
@@ -64,22 +73,25 @@ a:hover {
 }
 
 .album-img {
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
 .artist-title {
-    color: var(--color-main-color);
+    color: var(--color-text-color);
 }
 
 .card-container {
-    position: relative;
-    width: 80%
+    width: 300px;
+    height: 100%;
+    background-color: var(--color-light-background);
 }
 
 .streaming-platform-img {
     width: 50px;
     height: auto; 
     border-radius: 0;
+    border: 0;
 }
+
 
