@@ -7,6 +7,8 @@
     --color-dark-background: #363643;
     --color-dark-accent: #CACCF2;
     --color-dark-header: #212125;
+    --color-purple-accent: #6277D9;
+    --color-purple-shade: #8B9BE4;
 }
 
 * {
@@ -30,7 +32,7 @@ h1 {
 }
 
 h2 {
-    color: var(--color-text-color);
+    color: var(--color-purple-shade);
 }
 
 
