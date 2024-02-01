@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-light-background: #EDF0F5;
+    --color-light-accent: #8D98AD;
+    --color-text-color: #CDCCD1;
+    --color-dark-background: #363643;
+    --color-dark-accent: #CACCF2;
+    --color-dark-header: #212125;
+    --color-purple-accent: #6277D9;
+    --color-purple-shade: #8B9BE4;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: var(--color-dark-header);
+    color: var(--color-text-color);
+    padding: 2%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-purple-shade);
+}
+
+
+body {
+    background-color: var(--color-dark-background);
+    padding: 9% 2%;
+    color: var(--color-dark-accent);
+}
+
+img {
+    border-radius: 20px;
+    border: 2px solid var(--color-light-accent);
+}
+
+a:link, a:visited{
+    color: var(--color-dark-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-light-accent);
+}
+
+svg.icon {
+    display: inline;
+    height: 2em;
+    width: 2em;
+    vertical-align: top;
+    fill: currentColor;
+}
+
+.album-left-side {
+    width: 40%;
+    float: left;
+}
+
+.album-right-side {
+    width: 60%;
+    float: right
+}
+
+.album-img {
+    width: 70%;
+    height: auto;
+}
+
+.artist-title {
+    position: absolute;
+    color: var(--color-text-color);
+}
+
+.card-container {
+    width: 300px;
+    height: 100%;
+    background-color: var(--color-light-background);
+}
+
+.home-img {
+    margin-right: auto;
+}
+
+.streaming-platform-img {
+    width: 50px;
+    height: auto; 
+    border-radius: 0;
+    border: 0;
+}
+
+
