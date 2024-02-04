@@ -73,10 +73,6 @@ svg.icon {
     height: auto;
 }
 
-.artist-title {
-    color: var(--color-text-color);
-}
-
 .card-container {
     width: 300px;
     height: 100%;
@@ -85,6 +81,10 @@ svg.icon {
 
 .container {
     padding: 5%;
+}
+
+.header-title {
+    color: var(--color-text-color);
 }
 
 .streaming-platform-img {

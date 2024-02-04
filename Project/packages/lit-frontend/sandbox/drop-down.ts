@@ -45,9 +45,10 @@ class DropDownElement extends LitElement {
       display: none;
       position: absolute;
       top: 100%;
-      left: 0;
+      left: auto;
       border: 1px solid;
       background: white;
+      right:0;
     }
 
     #is-shown:checked ~ slot[name="menu"] {
