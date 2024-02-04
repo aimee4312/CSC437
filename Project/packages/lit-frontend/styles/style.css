@@ -16,19 +16,13 @@
 }
 
 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5%;
-    background-color: var(--color-dark-header);
-    color: var(--color-text-color);
-    padding: 2%;
-    margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: var(--color-dark-header); 
+    color: var(--color-text-color); 
+    margin: 0; 
 }
 
 h2 {
@@ -37,8 +31,8 @@ h2 {
 
 
 body {
+    margin: 0;
     background-color: var(--color-dark-background);
-    padding: 9% 2%;
     color: var(--color-dark-accent);
 }
 
@@ -65,12 +59,12 @@ svg.icon {
 }
 
 .album-left-side {
-    width: 40%;
+    width: 50%;
     float: left;
 }
 
 .album-right-side {
-    width: 60%;
+    width: 50%;
     float: right
 }
 
@@ -80,7 +74,6 @@ svg.icon {
 }
 
 .artist-title {
-    position: absolute;
     color: var(--color-text-color);
 }
 
@@ -90,8 +83,8 @@ svg.icon {
     background-color: var(--color-light-background);
 }
 
-.home-img {
-    margin-right: auto;
+.container {
+    padding: 5%;
 }
 
 .streaming-platform-img {
