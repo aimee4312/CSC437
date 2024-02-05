@@ -37,8 +37,6 @@ body {
 }
 
 img {
-    border-radius: 150px;
-    border: 2px solid var(--color-light-accent);
 }
 
 a:link, a:visited{
@@ -58,21 +56,6 @@ svg.icon {
     fill: currentColor;
 }
 
-.profile-left {
-    width: 50%;
-    float: left;
-}
-
-.profile-right {
-    width: 50%;
-    float: right;
-}
-
-.album-img {
-    width: 70%;
-    height: auto;
-}
-
 .card-container {
     width: 300px;
     height: 100%;
@@ -85,20 +68,35 @@ svg.icon {
 
 .name {
     padding: 10%;
-    font-size: 5em;
+    font-size: 2em;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.profile-navbar {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    background-color: var(--color-purple-accent);
 }
 
 .profile-img {
     box-sizing: border-box;
-    padding-top: 5%;
-    padding-left: 5%;
+    border-radius: 150px;
+    border: 2px solid var(--color-light-accent);
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
-.streaming-platform-img {
-    width: 50px;
-    height: auto; 
-    border-radius: 0;
-    border: 0;
+.selected-prof-nav {
+    grid-column: 1; 
+    grid-row: 2; 
+    background-color: #363643;
 }
 
 
