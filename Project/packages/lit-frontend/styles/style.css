@@ -9,6 +9,10 @@
     --color-dark-header: #212125;
     --color-purple-accent: #6277D9;
     --color-purple-shade: #8B9BE4;
+    --color-slider-border: #087d5e;
+    --color-slider-transition: 300ms;
+    --color-slider-button: #5e7d75;
+    --color-slider-border: #087d5e;
 }
 
 * {
@@ -67,13 +71,6 @@ svg.icon {
     grid-auto-rows: 120px;
 }
 
-.profile-navbar {
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 10;
-    background-color: var(--color-purple-accent);
-}
-
 .profile-img {
     box-sizing: border-box;
     border-radius: 150px;
@@ -83,10 +80,26 @@ svg.icon {
     margin-left: 25%;
 }
 
+.profile-navbar {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    background-color: var(--color-purple-accent);
+}
+
+.profile-setting {
+}
+
+
 .selected-prof-nav {
     grid-column: 1; 
     grid-row: 2; 
     background-color: #363643;
+}
+
+.toggle-switch {
+    grid-column: 3;
+    grid-row: 1;
 }
 
 

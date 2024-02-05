@@ -4,7 +4,7 @@ import './drop-down';
 import '../styles/style.css'
 
 @customElement('header-component')
-class HeaderElement extends LitElement {
+export class HeaderElement extends LitElement {
   render() {
     return html`
     <h1>
