@@ -37,7 +37,7 @@ body {
 }
 
 img {
-    border-radius: 20px;
+    border-radius: 150px;
     border: 2px solid var(--color-light-accent);
 }
 
@@ -58,14 +58,14 @@ svg.icon {
     fill: currentColor;
 }
 
-.album-left-side {
+.profile-left {
     width: 50%;
     float: left;
 }
 
-.album-right-side {
+.profile-right {
     width: 50%;
-    float: right
+    float: right;
 }
 
 .album-img {
@@ -83,8 +83,15 @@ svg.icon {
     padding: 5%;
 }
 
-.header-title {
-    color: var(--color-text-color);
+.name {
+    padding: 10%;
+    font-size: 5em;
+}
+
+.profile-img {
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
 .streaming-platform-img {

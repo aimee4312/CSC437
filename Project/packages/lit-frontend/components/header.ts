@@ -1,13 +1,10 @@
-import { css, html, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js";
-import styles from '../styles/style.css';
+import { html, LitElement } from "lit";
+import { customElement } from "lit/decorators.js";
+import './drop-down';
+import '../styles/style.css'
 
 @customElement('header-component')
-export class MyHeading extends LitElement {
-  @property({ type: String }) text = '';
-
-  static styles = css`${styles}`; 
-
+class HeaderElement extends LitElement {
   render() {
     return html`
     <h1>
@@ -17,17 +14,20 @@ export class MyHeading extends LitElement {
         </svg>  
       </a>
       <div class="header-title">chromawave</div>
-      <drop-down>
+      <dropdown-component>
           <svg class="icon">
               <use href="../source-images/icons/icon.svg#icon-profile" />
           </svg>
           <ul slot="menu" >
               <li><a href="../profile-drop-down/profile.html">Profile</a></li>
+              <li><hr /></li>
               <li>Saved songs</li>
+              <li><hr /></li>
               <li>Saved palettes</li>
+              <li><hr /></li>
               <li>Logout</li>
           </ul>
-      </drop-down>
+      </dropdown-component>
     </h1>`;
   }
 }

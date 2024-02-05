@@ -1,7 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("drop-down")
+@customElement("dropdown-component")
 class DropDownElement extends LitElement {
   @property({ reflect: true, type: Boolean })
   open: boolean = false;

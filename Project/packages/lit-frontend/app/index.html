@@ -3,13 +3,33 @@
     <head>
         <link rel="stylesheet" href="../styles/style.css" />
         <meta charset="utf-8">
-        <title>Programming Exercises</title>
-        <script type="module" src="../sandbox/drop-down.ts"></script>
+        <title>Website Name</title>
+        <script type="module" src="../components/drop-down.ts"></script>
     </head>
     <body>
-        <h1>Home Page</h1>
-        <h2><a href="pe.html">Programming Exercises</a></h2>
-        <h2><a href="chromawave.html">My Website Idea</a></h2>
+        <h1>
+            <a href="../app/index.html">
+                <svg class="icon">
+                    <use href="../source-images/icons/icon.svg#icon-home" />
+                </svg>  
+            </a>
+            <div class="header-title">TBD</div>
+            <dropdown-component>
+                <svg class="icon">
+                    <use href="../source-images/icons/icon.svg#icon-profile" />
+                </svg>
+                <ul slot="menu" >
+                    <li><a href="../profile-drop-down/profile.html">Profile</a></li>
+                    <li><hr /></li>
+                    <li>Saved songs</li>
+                    <li><hr /></li>
+                    <li>Saved palettes</li>
+                    <li><hr /></li>
+                    <li>Logout</li>
+                </ul>
+            </dropdown-component>
+        </h1>
+        <div style="display: flex; justify-content: center; height: 100vh; text-align: center; flex-direction: column;">search bar here later</div>
     </body>
 
 </html>

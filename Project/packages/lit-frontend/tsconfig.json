@@ -20,5 +20,5 @@
       "noUnusedParameters": true,
       "noFallthroughCasesInSwitch": true
     },
-    "include": ["src", "sandbox/drop-down.ts"]
+    "include": ["src", "components/drop-down.ts"]
   }
