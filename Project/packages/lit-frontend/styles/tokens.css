@@ -7,16 +7,19 @@
     --color-dark-header: #212125;
     --color-purple-accent: #6277D9;
     --color-purple-shade: #8B9BE4;
-    --color-slider-border: #11b059;
-    --color-slider-transition: 300ms;
-    --color-slider-button: #5e7d75;
+    --color-slider-checked: rgb(42 143 42);
+    --color-slider-background: #ccc;
+    --color-slider-forground: #fff;
+    --time-slider-transition: 300ms;
+
+    --primary-light-background: #fbfbfe;
+    --light-background-text: #050315;
+    --primary-color: #2F27CE;
 }
-  
-  body.dark-mode {
-    --color-background-page: rgb(3, 69, 2);
-    --color-text: rgb(240, 240, 223);
-    --color-background-card: black;
-    --color-accent: var(--color-accent-inverted);
-    --color-text-control: rgb(51 51 51);
-    --color-text-control-inverted: var(--color-background-page);
-  }
+
+.light-mode {
+    --primary-light-background: #fbfbfe;
+    --light-background-text: #050315;
+    --primary-color: #2F27CE;
+}
+

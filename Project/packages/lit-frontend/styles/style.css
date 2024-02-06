@@ -1,20 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-:root {
-    --color-light-background: #EDF0F5;
-    --color-light-accent: #8D98AD;
-    --color-text-color: #CDCCD1;
-    --color-dark-background: #363643;
-    --color-dark-accent: #CACCF2;
-    --color-dark-header: #212125;
-    --color-purple-accent: #6277D9;
-    --color-purple-shade: #8B9BE4;
-    --color-slider-border: #087d5e;
-    --color-slider-transition: 300ms;
-    --color-slider-button: #5e7d75;
-    --color-slider-border: #087d5e;
-}
-
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -35,12 +19,12 @@ h2 {
 
 body {
     margin: 0;
-    background-color: var(--color-dark-background);
+    background-color: var(--primary-light-background);
     color: var(--color-dark-accent);
 }
 
 a:link, a:visited{
-    color: var(--color-dark-accent);
+    color: var(--light-background-text);
     text-decoration: none;
 }
 
@@ -84,7 +68,7 @@ svg.icon {
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 10;
-    background-color: var(--color-purple-accent);
+    background-color: var(--primary-color);
 }
 
 .profile-setting {
@@ -94,12 +78,12 @@ svg.icon {
 .selected-prof-nav {
     grid-column: 1; 
     grid-row: 2; 
-    background-color: #363643;
+    background-color: var(--primary-light-background);
 }
 
 .toggle-switch {
-    grid-column: 3;
     grid-row: 1;
+    grid-column: 4;
 }
 
 
