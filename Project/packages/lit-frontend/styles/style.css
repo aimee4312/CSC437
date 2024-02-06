@@ -8,28 +8,24 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px; 
-    background-color: var(--color-dark-header); 
-    color: var(--color-text-color); 
-    margin: 0; 
-}
-
-h2 {
-    color: var(--color-purple-shade);
+    background-color: var(--secondary-color); 
+    color: var(--secondary-text); 
+    margin: 0;
 }
 
 body {
     margin: 0;
-    background-color: var(--primary-light-background);
-    color: var(--color-dark-accent);
+    background-color: var(--primary-background);
+    color: var(--secondary-text);
 }
 
 a:link, a:visited{
-    color: var(--light-background-text);
+    color: var(--secondary-text);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--color-light-accent);
+    color: var(--primary-accent);
 }
 
 svg.icon {
@@ -42,6 +38,10 @@ svg.icon {
 
 .container {
     padding: 5%;
+}
+
+.dropdown {
+    background-color: var(--primary-accent);
 }
 
 .name {
@@ -58,7 +58,7 @@ svg.icon {
 .profile-img {
     box-sizing: border-box;
     border-radius: 150px;
-    border: 2px solid var(--color-light-accent);
+    border: 2px solid var(--primary-accent);
     width: 40%;
     margin-top: 10%;
     margin-left: 25%;
@@ -68,17 +68,15 @@ svg.icon {
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 10;
-    background-color: var(--primary-color);
+    background-color: var(--primary-background);
 }
-
-.profile-setting {
-}
-
 
 .selected-prof-nav {
     grid-column: 1; 
     grid-row: 2; 
-    background-color: var(--primary-light-background);
+    background-color: var(--secondary-color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .toggle-switch {

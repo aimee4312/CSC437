@@ -3,7 +3,7 @@ import { customElement } from "lit/decorators.js";
 import './drop-down';
 import '../styles/style.css'
 
-@customElement('header-component')
+@customElement('header-bar')
 export class HeaderElement extends LitElement {
   render() {
     return html`

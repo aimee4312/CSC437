@@ -1,7 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("toggle-switch-component")
+@customElement("toggle-switch")
 class ToggleSwitchElement extends LitElement {
   @property({ reflect: true, type: Boolean })
   on: boolean = false;
@@ -10,7 +10,7 @@ class ToggleSwitchElement extends LitElement {
     return html`<label>
       <slot>Label</slot>
       <span class="slider">
-        <input type="checkbox" @change=${this._handleChange} checked/>
+        <input type="checkbox" @change=${this._handleChange} .checked=${this.darkModeEnabled}/>
       </span>
     </label>`;
   }
@@ -55,9 +55,9 @@ class ToggleSwitchElement extends LitElement {
       left: 1.5em;
     }
   `;
-
   _handleChange(ev: Event) {
     const target = ev.target as HTMLInputElement;
-    this.on = target?.checked;
+    this.darkModeEnabled = target.checked;
+    document.body.classList.toggle('dark-mode', this.darkModeEnabled);
   }
 }

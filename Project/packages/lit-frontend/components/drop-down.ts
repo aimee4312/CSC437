@@ -1,7 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("dropdown-component")
+@customElement("drop-down")
 class DropDownElement extends LitElement {
   @property({ reflect: true, type: Boolean })
   open: boolean = false;
@@ -47,8 +47,10 @@ class DropDownElement extends LitElement {
       top: 100%;
       left: auto;
       border: 1px solid;
+      border-radius: 15px;
       background: white;
       right:0;
+      z-index: 1;
     }
 
     #is-shown:checked ~ slot[name="menu"] {
