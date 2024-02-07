@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/tokens.css" />
+        <link rel="stylesheet" href="../styles/card.css" />
+        <meta charset="utf-8">
+        <title>Website Name</title>
+        <script type="module" src="../components/drop-down.ts"></script>
+        <script type="module" src="../components/music-card.ts"></script>
+        <script type="module" src="../components/header.ts"></script>
+        <script type="module" src="../components/toggle-switch.ts"></script>
+    </head>
+    <body>
+        <header-bar class="header"></header-bar>
+        </h1>
+        <div class="card-display">
+            <a href="">
+                <music-card>
+                    <img slot="image" src="../source-images/artist/quadeca.jpeg" alt="Avatar" style="width:100%">
+                    <span slot="artist">Quadeca</span>
+                    <span slot="genre">Hip hop, emo rap, experimental hip hop, art pop</span>
+                </music-card> 
+            </a>
+            <a href="">
+                <music-card>
+                    <img slot="image" src="../source-images/artist/eden.jpeg" alt="Avatar" style="width:100%">
+                    <span slot="artist">Eden</span>
+                    <span slot="genre">Alternative, rock, R&B, dream pop, indietronica, indie pop, electronic</span>
+                </music-card> 
+            </a>
+
+        </div>
+        
+    </body>
+
+</html>

@@ -8,31 +8,10 @@
         <title>Profile</title>
         <script type="module" src="../components/drop-down.ts"></script>
         <script type="module" src="../components/toggle-switch.ts"></script>
+        <script type="module" src="../components/header.ts"></script>
     </head>
     <body>
-       <h1>
-            <a href="../app/index.html">
-                <svg class="icon">
-                    <use href="../source-images/icons/icon.svg#icon-home" />
-                </svg>  
-            </a>
-            <div class="header-title">Profile</div>
-            <drop-down>
-                <svg class="icon">
-                    <use href="../source-images/icons/icon.svg#icon-profile" />
-                </svg>
-                <ul slot="menu" >
-                    <li><a href="../profile-drop-down/profile.html">Profile</a></li>
-                    <li><hr /></li>
-                    <li><a href="../profile-drop-down/saved-songs.html">Saved Songs</a></li>
-                    <li><hr /></li>
-                    <li><a href="../profile-drop-down/saved-palettes.html">Saved Palettes</a></li>
-                    <li><hr /></li>
-                    <li>Logout</li>
-                </ul>
-            </drop-down>
-        </h1> 
-
+        <header-bar></header-bar>
         <div class="profile-container">
             <div class="profile-navbar">
                 <img src="../source-images/randomuser.jpeg" class="profile-img">
@@ -46,12 +25,8 @@
                     <a href="./saved-palettes.html">Saved Palettes</a>
                 </div>
             </div>
-            <div class="toggle-switch">
-                <toggle-switch>Dark Mode</toggle-switch>
-            </div>
             <img src="../source-images/randomuser.jpeg" class="profile-img img-change">
             <p class="display-name">User's name</p>
-
             <div class="text-input">
                 Name
                 <input type="text" placeholder="User's name">

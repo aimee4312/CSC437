@@ -3,16 +3,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px; 
-    background-color: var(--secondary-color); 
-    color: var(--secondary-text); 
-    margin: 0;
-}
-
 body {
     margin: 0;
     background-color: var(--primary-background);
@@ -33,14 +23,6 @@ input {
     margin-left: 0;
     width: 100%;
     height: 20%
-}
-
-svg.icon {
-    display: inline;
-    height: 2em;
-    width: 2em;
-    vertical-align: top;
-    fill: currentColor;
 }
 
 .dropdown {

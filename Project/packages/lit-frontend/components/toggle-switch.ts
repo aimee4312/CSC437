@@ -2,7 +2,7 @@ import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
 @customElement("toggle-switch")
-class ToggleSwitchElement extends LitElement {
+export class ToggleSwitchElement extends LitElement {
   @property({ reflect: true, type: Boolean })
   on: boolean = false;
 
@@ -10,7 +10,7 @@ class ToggleSwitchElement extends LitElement {
     return html`<label>
       <slot>Label</slot>
       <span class="slider">
-        <input type="checkbox" @change=${this._handleChange} .checked=${this.darkModeEnabled}/>
+        <input type="checkbox" @change=${this._handleChange}/>
       </span>
     </label>`;
   }
@@ -21,18 +21,17 @@ class ToggleSwitchElement extends LitElement {
     }
     label {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
-      line-height: 2em;
     }
     .slider {
       display: inline-block;
       border: 1px solid var(--color-slider-checked);
       border-radius: 0.75em;
       background-color: var(--color-slider-background);
-      margin: 1em;
-      height: 1.5em;
-      width: 2.75em;
+      margin-left: 10px;
+      height: 1em;
+      width: 1.75em;
       position: relative;
       transition: background-color
       var(--time-transition-control);
@@ -44,8 +43,8 @@ class ToggleSwitchElement extends LitElement {
       appearance: none;
       background-color: var(--color-slider-forground);
       border-radius: 50%;
-      width: 1.25em;
-      height: 1.25em;
+      width: 1.5em;
+      height: 1.5em;
       vertical-align: center;
       position: absolute;
       left: 0;
@@ -55,9 +54,15 @@ class ToggleSwitchElement extends LitElement {
       left: 1.5em;
     }
   `;
+  
   _handleChange(ev: Event) {
     const target = ev.target as HTMLInputElement;
-    this.darkModeEnabled = target.checked;
-    document.body.classList.toggle('dark-mode', this.darkModeEnabled);
+    const composedEvent = new Event(ev.type, {
+      bubbles: true,
+      composed: true
+    });
+
+    this.on = target?.checked;
+    this.dispatchEvent(composedEvent);
   }
 }
