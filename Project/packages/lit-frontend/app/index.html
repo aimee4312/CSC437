@@ -3,35 +3,41 @@
     <head>
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/tokens.css" />
+        <link rel="stylesheet" href="../styles/homepage.css" />
         <meta charset="utf-8">
         <title>Website Name</title>
         <script type="module" src="../components/drop-down.ts"></script>
     </head>
     <body>
-        <h1>
-            <a href="../app/index.html">
-                <svg class="icon">
-                    <use href="../source-images/icons/icon.svg#icon-home" />
-                </svg>  
-            </a>
-            <div class="header-title">TBD</div>
-            <drop-down>
-                <svg class="icon">
-                    <use href="../source-images/icons/icon.svg#icon-profile" />
-                </svg>
-                <ul slot="menu" >
-                    <li><a href="../profile-drop-down/profile.html">Profile</a></li>
-                    <li><hr /></li>
-                    <li><a href="../profile-drop-down/saved-songs.html">Saved Songs</a></li>
-                    <li><hr /></li>
-                    <li><a href="../profile-drop-down/saved-palettes.html">Saved Palettes</a></li>
-                    <li><hr /></li>
-                    <li>Logout</li>
-                </ul>
-            </drop-down>
-        </h1>
-        <toggle-switch>Switch</toggle-switch>
-        <div style="display: flex; justify-content: center; height: 100vh; text-align: center; flex-direction: column;">search bar here later</div>
+        <div class="background-container">
+            <h1>
+                <a href="../app/index.html">
+                    <svg class="icon">
+                        <use href="../source-images/icons/icon.svg#icon-home" />
+                    </svg>  
+                </a>
+                <div>TBD</div>
+                <drop-down>
+                    <svg class="icon">
+                        <use href="../source-images/icons/icon.svg#icon-profile" />
+                    </svg>
+                    <ul slot="menu" >
+                        <li><a href="../profile-drop-down/profile.html">Profile</a></li>
+                        <li><hr /></li>
+                        <li><a href="../profile-drop-down/saved-songs.html">Saved Songs</a></li>
+                        <li><hr /></li>
+                        <li><a href="../profile-drop-down/saved-palettes.html">Saved Palettes</a></li>
+                        <li><hr /></li>
+                        <li>Logout</li>
+                    </ul>
+                </drop-down>
+            </h1>
+        </div>
+        
+        <div class="container">
+            <input type="text" class="searchbar" placeholder="Search...">
+        </div>
+        
     </body>
 
 </html>
