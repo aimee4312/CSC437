@@ -1,3 +1,7 @@
+input[type=text]{
+    border-radius: 10px;
+  }
+
 .background-container {
     position: fixed;
     top: 0;
