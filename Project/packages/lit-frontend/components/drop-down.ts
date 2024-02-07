@@ -48,7 +48,7 @@ export class DropDownElement extends LitElement {
       left: auto;
       border: 1px solid;
       border-radius: 15px;
-      background: white;
+      background: var(--secondary-color);
       right:0;
     }
 

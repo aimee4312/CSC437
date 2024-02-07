@@ -4,11 +4,13 @@
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/tokens.css" />
         <link rel="stylesheet" href="../styles/profile.css" />
+        <link rel="stylesheet" href="../styles/card.css" />
         <meta charset="utf-8">
         <title>Profile</title>
         <script type="module" src="../components/drop-down.ts"></script>
         <script type="module" src="../components/toggle-switch.ts"></script>
         <script type="module" src="../components/header.ts"></script>
+        <script type="module" src="../components/display-card.ts"></script>
     </head>
     <body>
         <header-bar></header-bar>
@@ -25,13 +27,27 @@
                     <a href="./saved-palettes.html">Saved Palettes</a>
                 </div>
             </div>
+
+            <div class="profile-display">
+                <a href="https://open.spotify.com/track/3wraoAWcDq4LxPSgrSDIWi?si=5080a40210904a72">
+                    <display-card>
+                        <img slot="image" src="../source-images/music/from-me-to-you.jpg" alt="Avatar">
+                        <span slot="title">Verglas (Interlude)</span>
+                        <span slot="by">Quadeca</span>
+                    </display-cardd> 
+                </a>
+                <a href="https://open.spotify.com/track/4H8WOZlQmwqBDnGylcv5K0?si=c8d9abea782a496d">
+                    <display-card>
+                        <img slot="image" src="../source-images/music/icymi.jpg" alt="Avatar">
+                        <span slot="title">Call Me Back</span>
+                        <span slot="by">EDEN</span>
+                    </display-card> 
+                </a>
+            </div>
         </div>
 
-        <div class="saved-songs">
-            <!-- if no song, add a plus button to upload one or go to catalog -->
-        </div>
         
-        <div class="favorite-songs"></div>
+        
     </body>
     
 </html>

@@ -24,7 +24,7 @@ export class HeaderElement extends LitElement {
           <ul slot="menu" >
               <li><a href="../profile-drop-down/profile.html">Profile</a></li>
               <li><hr /></li>
-              <li><a href="../profile-drop-down/saved-songs.html">Saved Songs</a>s</li>
+              <li><a href="../profile-drop-down/saved-songs.html">Saved Songs</a></li>
               <li><hr /></li>
               <li><a href="../profile-drop-down/saved-palettes.html">Saved Palettes</a></li>
               <li><hr /></li>

@@ -18,8 +18,22 @@
 .profile-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 120px;
+    grid-auto-rows: auto;
 }
+
+.profile-display {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin: 5%;
+  }
+  
+  .profile-display a {
+    /* Your styles here */
+    display: inline-block;
+    width: 100%; /* Take up the entire width of the grid cell */
+  }
 
 .profile-img {
     box-sizing: border-box;
@@ -48,9 +62,4 @@
 .text-input {
     grid-column: 3;
     grid-row: 2;
-}
-
-.toggle-switch {
-    grid-row: 1;
-    grid-column: 4;
 }
